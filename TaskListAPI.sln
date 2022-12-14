@@ -1,0 +1,56 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{67364877-6319-4D2B-A014-04D5C8CE8FD3}"
+ProjectSection(SolutionItems) = preProject
+	README.md = README.md
+	global.json = global.json
+	nuget.config = nuget.config
+	nuget.config-template = nuget.config-template
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskListAPI", "Source\TaskListAPI\TaskListAPI.csproj", "{F604315C-FFE6-4E43-B5B5-300312C4CA0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{DA84F762-DAB2-4028-B80A-8858283953AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskListAPI.Test", "Source\TaskListAPI.Test\TaskListAPI.Test.csproj", "{810F029A-E05F-4624-BC11-492A652330DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".s2i", ".s2i", "{6502A6BF-CB85-4373-B776-B1D01134FF33}"
+	ProjectSection(SolutionItems) = preProject
+		.s2i\environment = .s2i\environment
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bin", "bin", "{1446F176-8220-4946-A8FD-EFCFA2011D36}"
+	ProjectSection(SolutionItems) = preProject
+		.s2i\bin\assemble = .s2i\bin\assemble
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F604315C-FFE6-4E43-B5B5-300312C4CA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F604315C-FFE6-4E43-B5B5-300312C4CA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F604315C-FFE6-4E43-B5B5-300312C4CA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F604315C-FFE6-4E43-B5B5-300312C4CA0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{810F029A-E05F-4624-BC11-492A652330DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810F029A-E05F-4624-BC11-492A652330DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810F029A-E05F-4624-BC11-492A652330DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810F029A-E05F-4624-BC11-492A652330DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B133240D-477D-44C9-A399-FCD0E96D0EAB}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F604315C-FFE6-4E43-B5B5-300312C4CA0C} = {DA84F762-DAB2-4028-B80A-8858283953AC}
+		{810F029A-E05F-4624-BC11-492A652330DD} = {DA84F762-DAB2-4028-B80A-8858283953AC}
+		{6502A6BF-CB85-4373-B776-B1D01134FF33} = {67364877-6319-4D2B-A014-04D5C8CE8FD3}
+		{1446F176-8220-4946-A8FD-EFCFA2011D36} = {6502A6BF-CB85-4373-B776-B1D01134FF33}
+	EndGlobalSection
+EndGlobal

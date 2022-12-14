@@ -1,0 +1,3 @@
+DOTNET_STARTUP_PROJECT=./Source/TaskListAPI/TaskListAPI.csproj
+DOTNET_TEST_PROJECTS=./Source/TaskListAPI.Test/TaskListAPI.Test.csproj
+DOTNET_CONFIGURATION=Release

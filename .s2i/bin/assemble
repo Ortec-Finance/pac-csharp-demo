@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Run additional build before steps
+
+sed '/dotnet test/ s/$/ --logger "html;logfilename=test-results.html" -r \/test-results/' /usr/libexec/s2i/assemble > /tmp/scripts/assemble_test
+
+chmod a+rwx /tmp/scripts/assemble_test
+
+# Execute original assemble script.   
+/tmp/scripts/assemble_test
